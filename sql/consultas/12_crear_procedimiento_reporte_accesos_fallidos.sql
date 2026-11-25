@@ -14,9 +14,12 @@ BEGIN TRY
          JOIN acceso a
               ON d.id_dispositivo = a.id_dispositivo
     WHERE a.resultado <> 'exitoso'
-          AND u.id_usuario IN (SELECT id_usuario_beneficiario
-                               FROM suscripcion
-                               WHERE estado = 'activa')
+          AND u.id_usuario IN (SELECT s.id_usuario_beneficiario
+                               FROM suscripcion s
+                                    JOIN plan_suscripcion p
+                                         ON s.id_plan_suscripcion = p.id_plan_suscripcion
+                               WHERE s.estado = 'activa'
+                                     AND DATEADD(MONTH, p.duracion_meses, s.fecha_inicio) > GETDATE())
     GROUP BY u.nombre, u.correo
     HAVING COUNT(*) >= @minimo
 END TRY

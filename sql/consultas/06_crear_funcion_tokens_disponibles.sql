@@ -8,6 +8,7 @@ BEGIN
               ON s.id_plan_suscripcion = p.id_plan_suscripcion
     WHERE s.id_usuario_beneficiario = @id
           AND s.estado = 'activa'
+          AND DATEADD(MONTH, p.duracion_meses, s.fecha_inicio) > GETDATE()
     IF @q IS NULL
         SET @q = 0
     RETURN @q

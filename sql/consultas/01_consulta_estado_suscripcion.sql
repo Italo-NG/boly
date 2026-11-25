@@ -2,7 +2,7 @@ SELECT u.nombre AS 'Usuario',
        u.correo AS 'Correo',
        p.nombre AS 'Plan',
        s.fecha_inicio AS 'Inicio',
-       s.fecha_vencimiento AS 'Vencimiento',
+       DATEADD(MONTH, p.duracion_meses, s.fecha_inicio) AS 'Vencimiento',
        s.estado AS 'Estado'
 FROM usuario u
      LEFT JOIN suscripcion s
