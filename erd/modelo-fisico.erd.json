@@ -109,7 +109,6 @@
           "jpA1Be-Z_KqSr-SYT2uHD",
           "aR87lsluTWeGGmsv3HpUk",
           "nTlEHXa7IhSdu2BCfubk0",
-          "X4JQonjrEsPHWdxx5fpA9",
           "ME58YKdz8WbQwwOtUoKZm"
         ],
         "ui": {
@@ -130,7 +129,7 @@
         ],
         "ui": {
           "x": -25.7141,
-          "y": 491.0006
+          "y": 470.0006
         }
       },
       "lX09gsCJt7M_RIB5BUOhl": {
@@ -174,7 +173,6 @@
           "9QCth2kpHk403x1UXNsP2",
           "dU7GsOHQjRoY8ItHP5M_n",
           "cD5CxOh4SXYtLYRFUl4-u",
-          "f14dI4S5crfOYlUB1GzIw",
           "S0ezNgutiZMycMlHrHPqT",
           "1KfCYx0gJU9DJFwuzrKKZ",
           "HJzXQHLWEdbWhNmK2cN4R"
@@ -207,7 +205,6 @@
           "vCIlGDb5SSbeqHaVzhNQ6",
           "fRo7YeYf2GOOHcau8J722",
           "2K7ue-pSQVzK8N4209PoK",
-          "Gb1GBSSoTNmSp86KAT3pb",
           "ZZwh7CQlVyzXJJQEKav8B",
           "P70HpuB2O8I8UxShGwS9c"
         ],
@@ -352,13 +349,6 @@
         "dataType": "INT",
         "options": 10
       },
-      "X4JQonjrEsPHWdxx5fpA9": {
-        "id": "X4JQonjrEsPHWdxx5fpA9",
-        "tableId": "JGc0o6Qe1fqgW5zv5FaYQ",
-        "name": "fecha_activacion",
-        "dataType": "DATETIME",
-        "options": 0
-      },
       "aR87lsluTWeGGmsv3HpUk": {
         "id": "aR87lsluTWeGGmsv3HpUk",
         "tableId": "JGc0o6Qe1fqgW5zv5FaYQ",
@@ -440,8 +430,8 @@
       "BrWSB3vWbErSYgp-SS4en": {
         "id": "BrWSB3vWbErSYgp-SS4en",
         "tableId": "lX09gsCJt7M_RIB5BUOhl",
-        "name": "periodicidad",
-        "dataType": "VARCHAR(20)",
+        "name": "duracion_meses",
+        "dataType": "INT",
         "options": 8
       },
       "FJxwoX6DPrkp3Gte7yhpz": {
@@ -574,13 +564,6 @@
         "dataType": "INT",
         "options": 8
       },
-      "f14dI4S5crfOYlUB1GzIw": {
-        "id": "f14dI4S5crfOYlUB1GzIw",
-        "tableId": "xr47ZjrHScSGaDvSh1tb8",
-        "name": "fecha_vencimiento",
-        "dataType": "DATE",
-        "options": 8
-      },
       "5dLFMt8mgQQMfwDAYASsW": {
         "id": "5dLFMt8mgQQMfwDAYASsW",
         "tableId": "yRcFzr6kWwPnrvD6HkE0s",
@@ -628,13 +611,6 @@
         "tableId": "zLokWyH-R_HcVu1-1hRh-",
         "name": "fecha_pago",
         "dataType": "DATETIME",
-        "options": 8
-      },
-      "Gb1GBSSoTNmSp86KAT3pb": {
-        "id": "Gb1GBSSoTNmSp86KAT3pb",
-        "tableId": "zLokWyH-R_HcVu1-1hRh-",
-        "name": "monto",
-        "dataType": "DECIMAL(10,2)",
         "options": 8
       },
       "P70HpuB2O8I8UxShGwS9c": {
