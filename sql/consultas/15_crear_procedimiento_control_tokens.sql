@@ -10,6 +10,7 @@ BEGIN TRY
          JOIN plan_suscripcion p
               ON s.id_plan_suscripcion = p.id_plan_suscripcion
     WHERE s.estado = 'activa'
+          AND DATEADD(MONTH, p.duracion_meses, s.fecha_inicio) > GETDATE()
     OPEN csuscripcion
     FETCH csuscripcion INTO @usuario, @plan, @usados, @limite
     WHILE (@@FETCH_STATUS = 0)

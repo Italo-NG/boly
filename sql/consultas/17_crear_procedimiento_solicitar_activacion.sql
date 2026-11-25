@@ -13,6 +13,7 @@ FROM suscripcion s
           ON s.id_plan_suscripcion = p.id_plan_suscripcion
 WHERE s.id_usuario_beneficiario = @usuario
       AND s.estado = 'activa'
+      AND DATEADD(MONTH, p.duracion_meses, s.fecha_inicio) > GETDATE()
 SELECT @activos = COUNT(*)
 FROM dispositivo
 WHERE id_usuario = @usuario
@@ -38,8 +39,7 @@ BEGIN TRY
         INSERT INTO solicitud_activacion
         VALUES (@id, @id_dispositivo, @codigo, GETDATE(), 'aprobada', NULL)
         UPDATE dispositivo
-        SET estado = 'activo',
-            fecha_activacion = GETDATE()
+        SET estado = 'activo'
         WHERE id_dispositivo = @id_dispositivo
     END
     COMMIT TRAN tsolicitud
