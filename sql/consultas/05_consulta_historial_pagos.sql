@@ -1,6 +1,6 @@
 SELECT pg.fecha_pago AS 'Fecha',
        pl.nombre AS 'Plan',
-       pg.monto AS 'Monto',
+       pl.precio AS 'Monto',
        pg.estado AS 'Estado',
        pg.referencia_pago AS 'Comprobante'
 FROM pago pg
