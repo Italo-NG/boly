@@ -1,0 +1,379 @@
+{
+  "modelName": "Monti Hands",
+  "collections": [
+    {
+      "collectionName": "ticket_soporte",
+      "type": "object",
+      "properties": [
+        {
+          "name": "_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "numeric",
+          "error": {},
+          "GUID": "0b75a3e4-0a4b-4e4f-83f1-1935a84c162c"
+        },
+        {
+          "name": "id_dispositivo",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "numeric",
+          "error": {},
+          "GUID": "2ce94ad9-1c57-4cd8-b669-76f20dcde88f"
+        },
+        {
+          "name": "categoria",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "d638a1c3-275a-4384-97b4-b61a637a35e1",
+          "error": {}
+        },
+        {
+          "name": "descripcion",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "6b8131b5-8464-4100-b221-08bbe4df9001",
+          "error": {}
+        },
+        {
+          "name": "mensaje_error",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "65249f01-4f54-4034-b067-4f75803f81af",
+          "error": {}
+        },
+        {
+          "name": "fecha_creacion",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "date",
+          "primaryKey": false,
+          "error": {},
+          "GUID": "cba52db2-fef3-418f-8817-df6d859a932f"
+        },
+        {
+          "name": "estado",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "e446fbbc-1302-46ba-a998-40cfec0f4d17",
+          "error": {}
+        },
+        {
+          "name": "respuestas",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "array",
+          "properties": [
+            {
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "type": "document",
+              "properties": [
+                {
+                  "name": "autor",
+                  "hackoladeMeta": {},
+                  "isActivated": true,
+                  "type": "string",
+                  "GUID": "8e2e0f79-0915-41a8-a04d-e4a4b8e66cd4",
+                  "error": {}
+                },
+                {
+                  "name": "mensaje",
+                  "hackoladeMeta": {},
+                  "isActivated": true,
+                  "type": "string",
+                  "GUID": "6ef29a6c-314d-4e96-9fd8-bee91940d10e",
+                  "error": {}
+                },
+                {
+                  "name": "fecha",
+                  "hackoladeMeta": {},
+                  "isActivated": true,
+                  "type": "date",
+                  "primaryKey": false,
+                  "error": {},
+                  "GUID": "efa37286-a4c5-4cb6-83c2-2aa6aa667735"
+                }
+              ],
+              "additionalProperties": false,
+              "error": {},
+              "GUID": "1585461b-0233-4d4c-b312-d30560345890",
+              "arrayItem": true
+            }
+          ],
+          "additionalItems": true,
+          "error": {},
+          "GUID": "b6c5c8fc-8478-4c15-948c-745860ad54f2"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "9c81f80f-e455-4e72-a49d-aef878e985f5"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Strict",
+      "validationAction": "Error",
+      "storageEngineName": "WiredTiger",
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "GUID": "0eb88e09-45a0-4ff3-a872-c2d75961203d",
+      "bucketId": "d684273d-9307-4056-afaa-20c376c8cd7e",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "collectionName": "notificacion",
+      "type": "object",
+      "properties": [
+        {
+          "name": "_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "numeric",
+          "error": {},
+          "GUID": "efaad370-75d2-422a-9747-96bf94e26629"
+        },
+        {
+          "name": "id_suscripcion",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "numeric",
+          "error": {},
+          "GUID": "7dd523a7-dc61-4ef8-90b4-c329bf7d8495"
+        },
+        {
+          "name": "tipo",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "b7b88402-04e5-4ca4-b0ee-d87c36ad62ae",
+          "error": {}
+        },
+        {
+          "name": "canales",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "array",
+          "properties": [
+            {
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "type": "string",
+              "GUID": "1c8f84f4-973f-4751-aa1e-f8fa90be4c83",
+              "arrayItem": true
+            }
+          ],
+          "additionalItems": true,
+          "error": {},
+          "GUID": "d7250e39-d64a-4eba-ad52-960722411f8f"
+        },
+        {
+          "name": "fecha_envio",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "date",
+          "primaryKey": false,
+          "error": {},
+          "GUID": "a9082f0b-575c-42a5-b9c6-386c79bd1078"
+        },
+        {
+          "name": "leida",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "boolean",
+          "error": {},
+          "GUID": "cf9aa4ab-8515-4050-a79d-32d37026bed1"
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "178e1d58-dcea-4e8f-baaa-3b3b7ef8015a"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Strict",
+      "validationAction": "Error",
+      "storageEngineName": "WiredTiger",
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "GUID": "d6ba2d32-3842-47dc-bc49-ca128ddb19ab",
+      "bucketId": "d684273d-9307-4056-afaa-20c376c8cd7e",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "montihands_soporte",
+      "type": "bucket",
+      "collectionIds": [
+        "0eb88e09-45a0-4ff3-a872-c2d75961203d",
+        "d6ba2d32-3842-47dc-bc49-ca128ddb19ab"
+      ],
+      "backgroundColor": {
+        "r": 129,
+        "g": 212,
+        "b": 250,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "d684273d-9307-4056-afaa-20c376c8cd7e",
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "views": [],
+  "relationships": [],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "d684273d-9307-4056-afaa-20c376c8cd7e": "montihands_soporte",
+    "0eb88e09-45a0-4ff3-a872-c2d75961203d": "ticket_soporte",
+    "0b75a3e4-0a4b-4e4f-83f1-1935a84c162c": "_id",
+    "2ce94ad9-1c57-4cd8-b669-76f20dcde88f": "id_dispositivo",
+    "d638a1c3-275a-4384-97b4-b61a637a35e1": "categoria",
+    "6b8131b5-8464-4100-b221-08bbe4df9001": "descripcion",
+    "65249f01-4f54-4034-b067-4f75803f81af": "mensaje_error",
+    "cba52db2-fef3-418f-8817-df6d859a932f": "fecha_creacion",
+    "e446fbbc-1302-46ba-a998-40cfec0f4d17": "estado",
+    "b6c5c8fc-8478-4c15-948c-745860ad54f2": "respuestas",
+    "8e2e0f79-0915-41a8-a04d-e4a4b8e66cd4": "autor",
+    "6ef29a6c-314d-4e96-9fd8-bee91940d10e": "mensaje",
+    "efa37286-a4c5-4cb6-83c2-2aa6aa667735": "fecha",
+    "d6ba2d32-3842-47dc-bc49-ca128ddb19ab": "notificacion",
+    "efaad370-75d2-422a-9747-96bf94e26629": "_id",
+    "7dd523a7-dc61-4ef8-90b4-c329bf7d8495": "id_suscripcion",
+    "b7b88402-04e5-4ca4-b0ee-d87c36ad62ae": "tipo",
+    "a9082f0b-575c-42a5-b9c6-386c79bd1078": "fecha_envio",
+    "cf9aa4ab-8515-4050-a79d-32d37026bed1": "leida",
+    "d7250e39-d64a-4eba-ad52-960722411f8f": "canales"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "65372e35-86dd-4232-ba11-ac40884d1409"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "b8689ed3-d5ba-4c2b-9b98-02cc5665f74d"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "87adb7b4-ffdc-46db-b1af-713aaf6a51ef"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "businessGlossaries": [],
+  "businessGlossaryTerms": [],
+  "dbVersion": "v8.x",
+  "dbVendor": "MongoDB",
+  "appTarget": "MONGODB",
+  "creationTS": "2026-11-24T23:55:06.227Z",
+  "GUID": "73ebe741-4d28-410a-98d3-aedde2d7ef70",
+  "isLineageEnabled": false,
+  "hackoladeMeta": {
+    "validationErrors": {
+      "modelName": false
+    }
+  },
+  "lastModifTS": "2026-11-25T14:22:04.926Z",
+  "persistenceSchemaVersion": "9",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "9.0.1"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "0eb88e09-45a0-4ff3-a872-c2d75961203d",
+            "x": 1104,
+            "y": 1104,
+            "width": 299.4,
+            "height": 253,
+            "color": {}
+          },
+          {
+            "GUID": "d6ba2d32-3842-47dc-bc49-ca128ddb19ab",
+            "x": 1484,
+            "y": 1108,
+            "width": 239,
+            "height": 163,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1040,
+            "y": 1040,
+            "GUID": "d684273d-9307-4056-afaa-20c376c8cd7e"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "0eb88e09-45a0-4ff3-a872-c2d75961203d"
+          },
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "d6ba2d32-3842-47dc-bc49-ca128ddb19ab"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
