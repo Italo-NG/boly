@@ -39,8 +39,7 @@ BEGIN TRY
         INSERT INTO solicitud_activacion
         VALUES (@id, @id_dispositivo, @codigo, GETDATE(), 'aprobada', NULL)
         UPDATE dispositivo
-        SET estado = 'activo',
-            fecha_activacion = GETDATE()
+        SET estado = 'activo'
         WHERE id_dispositivo = @id_dispositivo
     END
     COMMIT TRAN tsolicitud
