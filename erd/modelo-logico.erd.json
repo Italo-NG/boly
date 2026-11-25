@@ -62,7 +62,6 @@
           "tJzPqsZl4B0g94qEx5Cx5",
           "a9tw2HOl95Vb870KI4zOg",
           "69Q8UFeYHL32QtVmLzdGi",
-          "2uqDIWsVJgPjuJMoFInrp",
           "oEu9wzBw2_Uhlt8gDb5C8"
         ],
         "ui": {
@@ -75,10 +74,9 @@
         "name": "suscripcion",
         "columnIds": [
           "vjQluaPWAeX7ThPFgYSmz",
-          "D8RHeF8GYF-RfnVmCmaxr",
           "_3Scyi_WIsnzaSHsoeHot",
+          "D8RHeF8GYF-RfnVmCmaxr",
           "xK6rezOzsdG_3dkDtlMai",
-          "qlG2u7XrO_Y_31edAiJWV",
           "tXqfAD4WZj0lY7gEHasny",
           "DdAHcTTELEp6kOBo351Yg",
           "Vj8fb74iGHD-hYN9kPI4f"
@@ -101,7 +99,7 @@
         ],
         "ui": {
           "x": 1213.4091,
-          "y": -41
+          "y": -6
         }
       },
       "KM4-9DfsM0Jz7kHwrrnQQ": {
@@ -115,7 +113,7 @@
         ],
         "ui": {
           "x": 281.4459,
-          "y": 6.6073
+          "y": 41.6073
         }
       },
       "S6sFWul5PKxWjPMk-ozGI": {
@@ -132,7 +130,7 @@
         ],
         "ui": {
           "x": 900,
-          "y": 560
+          "y": 525
         }
       },
       "V4nTa-zkiHlNoYODGIBQ6": {
@@ -157,15 +155,15 @@
         "name": "exclusion_privacidad",
         "columnIds": [
           "WjV-jKO17j6GS42evmIK_",
+          "I9JG87KvcQ05YNfVaJBdw",
           "LFbVaWrODWG0HU_Cx1nyk",
           "rYzMe33gsUOUXjkn8DA_6",
           "IlODNJgHVbDGx19ixpel3",
-          "3j5-BSUKgTTPX4hNjXht-",
-          "I9JG87KvcQ05YNfVaJBdw"
+          "3j5-BSUKgTTPX4hNjXht-"
         ],
         "ui": {
           "x": 889,
-          "y": -41
+          "y": -6
         }
       },
       "akJbT99kZ1E1Gb2NYZun7": {
@@ -181,7 +179,7 @@
         ],
         "ui": {
           "x": 573.4087,
-          "y": 544.8178
+          "y": 509.8178
         }
       },
       "qQFByemkrJAMuIFve8zZB": {
@@ -207,7 +205,6 @@
           "OeqTlKgE_5Nhw9aTwQu-4",
           "yIzFBncLH01gL8tdiSPBv",
           "yXK-7LnZIsHLUo-R9Pr-M",
-          "Cm0u52gcUxl1SgLs7y0-r",
           "qBSpN7s3lYwQalHDBtg3E",
           "T-7nYNE_DBzQGL05zUIvE"
         ],
@@ -218,12 +215,6 @@
       }
     },
     "tableColumnEntities": {
-      "2uqDIWsVJgPjuJMoFInrp": {
-        "id": "2uqDIWsVJgPjuJMoFInrp",
-        "tableId": "0giALE3iPLvedT6Ql-IN9",
-        "name": "fecha_activacion",
-        "options": 0
-      },
       "69Q8UFeYHL32QtVmLzdGi": {
         "id": "69Q8UFeYHL32QtVmLzdGi",
         "tableId": "0giALE3iPLvedT6Ql-IN9",
@@ -284,12 +275,6 @@
         "name": "id_usuario_beneficiario",
         "options": 8
       },
-      "qlG2u7XrO_Y_31edAiJWV": {
-        "id": "qlG2u7XrO_Y_31edAiJWV",
-        "tableId": "1GZfloqk31pJ2FBWkHnU-",
-        "name": "fecha_vencimiento",
-        "options": 0
-      },
       "tXqfAD4WZj0lY7gEHasny": {
         "id": "tXqfAD4WZj0lY7gEHasny",
         "tableId": "1GZfloqk31pJ2FBWkHnU-",
@@ -323,7 +308,7 @@
       "II9LY4RcvB2Dv5HQjw9FD": {
         "id": "II9LY4RcvB2Dv5HQjw9FD",
         "tableId": "61-l58Ql8_L0DAz0UNSh9",
-        "name": "periodicidad",
+        "name": "duracion_meses",
         "options": 0
       },
       "TMGykUX0vIxqlXJ-1cWMU": {
@@ -559,12 +544,6 @@
         "tableId": "qQFByemkrJAMuIFve8zZB",
         "name": "id_dispositivo",
         "options": 8
-      },
-      "Cm0u52gcUxl1SgLs7y0-r": {
-        "id": "Cm0u52gcUxl1SgLs7y0-r",
-        "tableId": "rdrokFm5uoMwUHo_K_I9U",
-        "name": "monto",
-        "options": 0
       },
       "OeqTlKgE_5Nhw9aTwQu-4": {
         "id": "OeqTlKgE_5Nhw9aTwQu-4",
